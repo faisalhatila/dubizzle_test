@@ -67,55 +67,7 @@ const App = () => {
       <Header setSearch={setSearch} search={search} />
       <GlobalStyles />
       <GistList
-        items={[
-          {
-            id: 417862,
-            full_name: "octokit.rb",
-            owner: {
-              avatar_url: "https://avatars.githubusercontent.com/u/3430433?v=4",
-            },
-            forks_url: "https://api.github.com/repos/octokit/octokit.rb/forks",
-            created_at: "2009-12-10T21:41:49Z",
-            updated_at: "2023-06-19T17:40:40Z",
-          },
-          {
-            id: 711976,
-            full_name: "octokit.js",
-            owner: {
-              avatar_url: "https://avatars.githubusercontent.com/u/3430433?v=4",
-            },
-            created_at: "2010-06-09T17:07:03Z",
-            updated_at: "2023-06-26T07:49:30Z",
-          },
-          {
-            id: 7528679,
-            full_name: "octokit.net",
-            owner: {
-              avatar_url: "https://avatars.githubusercontent.com/u/3430433?v=4",
-            },
-            created_at: "2013-01-09T20:48:45Z",
-            updated_at: "2023-06-26T10:33:43Z",
-          },
-          {
-            id: 7530454,
-            full_name: "octokit.objc",
-            owner: {
-              avatar_url: "https://avatars.githubusercontent.com/u/3430433?v=4",
-            },
-            created_at: "2013-01-09T22:42:53Z",
-            updated_at: "2023-05-10T19:12:44Z",
-          },
-          {
-            id: 10575811,
-            full_name: "go-octokit",
-            owner: {
-              avatar_url: "https://avatars.githubusercontent.com/u/3430433?v=4",
-            },
-            forks_url: "https://api.github.com/repos/octokit/go-octokit/forks",
-            created_at: "2013-06-08T23:50:29Z",
-            updated_at: "2023-05-27T07:32:18Z",
-          },
-        ]}
+        items={data.data}
         loading={data?.loading}
         error={data.error}
         search={search}
